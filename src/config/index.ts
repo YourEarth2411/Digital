@@ -4,13 +4,13 @@ export const PRODUCT_CATEGORIES = [
     value: 'e_books' as const,
     featured: [
       {
-        name: 'New Arrivals',
+        name: 'Price',
         href: '/products?category=e_books&sort=desc',
         imageSrc: '/nav/ui-kits/blue.jpg',
       },
       {
-        name: 'Editor picks',
-        href: `/products?category=e_books&name=conan`,
+        name: 'Dragon Ball',
+        href: `/products?category=e_books&name=DragonBall`,
         imageSrc: '/nav/ui-kits/mixed.jpg',
       },
       {
@@ -18,11 +18,7 @@ export const PRODUCT_CATEGORIES = [
         href: '/products?category=e_books&name=doraemon',
         imageSrc: '/nav/ui-kits/blue.jpg',
       },
-      {
-        name: 'Doraemon',
-        href: '/products?category=e_books',
-        imageSrc: '/nav/ui-kits/blue.jpg',
-      },
+
     ],
   },
   {

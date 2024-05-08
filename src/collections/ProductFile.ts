@@ -83,6 +83,13 @@ export const ProductFiles: CollectionConfig = {
       'image/*',
       'font/*',
       'application/postscript',
+      'application/pdf', // PDF
+      'application/vnd.openxmlformats-officedocument.wordprocessingml.document', // DOCX
+      'audio/mpeg', // MP3
+      'video/mp4', // MP4
+      'video/*', // Video
+      'application/vnd.ms-excel', // Excel
+      'application/vnd.ms-powerpoint', // PowerPoin
     ],
   },
   fields: [
