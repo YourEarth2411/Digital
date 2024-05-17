@@ -2,7 +2,6 @@
 
 Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 
-![Project Image](https://github.com/joschan21/digitalhippo/blob/master/public/thumbnail.jpg)
 
 ## Copy & Paste List to follow along with the video (annoying stuff we don't wanna type out ourselves)
 
@@ -208,7 +207,7 @@ await payload.update({
 // send receipt
 try {
     const data = await resend.emails.send({
-    from: 'DigitalHippo <hello@joshtriedcoding.com>',
+    from: 'DigitalProduct <onboarding@nguyenvietkhanhyourearth.id.vn>',
     to: [user.email],
     subject: 'Thanks for your order! This is your receipt.',
     html: ReceiptEmailHtml({
@@ -231,7 +230,7 @@ return res.status(200).send()
 ```
 <Html>
     <Head />
-    <Preview>Your DigitalHippo Receipt</Preview>
+    <Preview>Your DigitalProduct Receipt</Preview>
 
     <Body style={main}>
     <Container style={container}>
@@ -241,7 +240,7 @@ return res.status(200).send()
             src={`${process.env.NEXT_PUBLIC_SERVER_URL}/hippo-email-sent.png`}
             width='100'
             height='100'
-            alt='DigitalHippo'
+            alt='DigitalProduct'
             />
         </Column>
 
@@ -350,7 +349,7 @@ return res.status(200).send()
         <Link href='#'>Privacy Policy </Link>
         </Text>
         <Text style={footerCopyright}>
-        Copyright © 2023 DigitalHippo Inc. <br />{' '}
+        Copyright © 2024 DigitalProduct Inc. <br />{' '}
         <Link href='#'>All rights reserved</Link>
         </Text>
     </Container>
@@ -539,12 +538,12 @@ const footerCopyright = {
         src={`${process.env.NEXT_PUBLIC_SERVER_URL}/hippo-newsletter-sign-up.png`}
         width="150"
         height="150"
-        alt="DigitalHippo"
+        alt="DigitalProduct"
         style={logo}
     />
     <Text style={paragraph}>Hi there,</Text>
     <Text style={paragraph}>
-        Welcome to DigitalHippo, the marketplace for high quality digital
+        Welcome to DigitalProduct, the marketplace for high quality digital
         goods. Use the button below to {actionLabel}.
     </Text>
     <Section style={btnContainer}>
@@ -555,7 +554,7 @@ const footerCopyright = {
     <Text style={paragraph}>
         Best,
         <br />
-        The DigitalHippo team
+        The DigitalProduct team
     </Text>
     <Hr style={hr} />
     <Text style={footer}>
@@ -617,8 +616,8 @@ const footer = {
 ### Customizing our metadata
 ```
 export function constructMetadata({
-  title = 'DigitalHippo - the marketplace for digital assets',
-  description = 'DigitalHippo is an open-source marketplace for high-quality digital goods.',
+  title = 'DigitalProduct - the marketplace for digital assets',
+  description = 'DigitalProduct is an open-source marketplace for high-quality digital goods.',
   image = '/thumbnail.png',
   icons = '/favicon.ico',
   noIndex = false,
